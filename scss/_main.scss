@@ -1,0 +1,160 @@
+$mainColor: #fff;
+$2ndColor: #000;
+@font-face{
+  font-family: custom-sans-serif;
+  src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF;
+  font-style: normal;
+}
+body{
+  font-family: 'Roboto',custom-sans-serif, sans-serif;
+  font-size: 24px;
+  line-height: 42px;
+  h2{
+    font-size: 64px;
+    line-height: 75px;
+    font-weight: bold;
+  }
+  img{
+    display: inline-block;
+  }
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header{
+  margin: 0 auto;
+  background: url(../img/headerbg.png) no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+  .title{
+    margin-top: 353px;
+    color: $mainColor;
+    font-weight: bold;
+    text-align: left;
+    span{
+      font-size: 80px;
+      line-height: 106px;
+    }
+    p{
+      padding-bottom: 63px;
+      line-height: 36px;
+    }
+    ul{
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 256px;
+    }
+  }
+}
+
+.introduction{
+  text-align: center;
+  font-weight: bold;
+  line-height: 36px;
+  padding-bottom: 24px;
+  h2{
+    padding-bottom: 40px;
+  }
+  img{
+    display: inline-block;
+    padding-bottom: 24px;
+  }
+  section{
+    padding-bottom: 32px;
+    p{
+      padding-bottom: 8px;
+    }
+  }
+  .link_bottom{
+    margin-left: 408px;
+    padding-bottom: 34px;
+    width: 384px;
+    border-top: solid #000 1.5px;
+  }
+  li{
+    padding-bottom: 32px;
+    position: relative;
+    &::before{
+      content: '';
+      width: 22px;
+      height: 22px;
+      position: absolute;
+      margin-top: 6px;
+      margin-left: -38px;
+      border-radius: 50%;
+      background: #891818;
+    }
+  }
+}
+.brand{
+  background: $2ndColor;
+  color: $mainColor;
+  text-align: center;
+  h2{
+    padding-top: 64px;
+    padding-bottom: 16px;
+  }
+  h3{
+    padding-bottom: 32px;
+  }
+  p{
+    font-size: 20px;
+    padding-bottom: 48px;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 160px;
+    .brand_1{
+      padding-left: 204px;
+      padding-bottom: 40px;
+    }
+  }
+}
+.otherWorks{
+  background: url(../img/otherworksbg.png) no-repeat;
+  background-position: 0 361px;
+  text-align: center;
+  h2{
+    padding-top: 64px;
+    padding-bottom: 24px;
+  }
+  p{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 48px;
+  }
+  .works{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60.78px;
+    ul{
+      display: flex;
+      justify-content: space-between;
+      p{
+        color: $mainColor;
+        padding-bottom: 56px;
+      }
+    }
+  }
+}
+footer{
+  background: $2ndColor;
+  color: $mainColor;
+  text-align: center;
+  padding-bottom: 80px;
+  h2{
+    font-size: 64px;
+    line-height: 75px;
+    padding-top: 64px;
+    padding-bottom: 16px;
+  }
+  p{
+    line-height: 36px;
+  }
+}
