@@ -72,6 +72,10 @@ body h2 {
   font-weight: bold;
 }
 
+body img {
+  display: block;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -80,6 +84,7 @@ body h2 {
 header {
   margin: 0 auto;
   background: url(../img/headerbg.png) no-repeat;
+  background-position: center center;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,20 +96,25 @@ header {
 }
 
 header .title {
-  margin-top: 353px;
+  margin-top: 356px;
   color: #fff;
   font-weight: bold;
   text-align: left;
 }
 
-header .title span {
-  font-size: 80px;
-  line-height: 106px;
+header .title p {
+  line-height: 28px;
 }
 
-header .title p {
-  padding-bottom: 63px;
-  line-height: 36px;
+header .title h1 {
+  font-size: 80px;
+  line-height: 94px;
+  padding-bottom: 32px;
+}
+
+header .title .titleMain {
+  padding-bottom: 48px;
+  line-height: 42px;
 }
 
 header .title ul {
@@ -132,11 +142,11 @@ header .title ul {
   padding-bottom: 24px;
 }
 
-.introduction section {
+.introduction ul {
   padding-bottom: 32px;
 }
 
-.introduction section p {
+.introduction ul li {
   padding-bottom: 8px;
 }
 
@@ -147,12 +157,12 @@ header .title ul {
   border-top: solid #000 1.5px;
 }
 
-.introduction li {
+.introduction .education li {
   padding-bottom: 32px;
   position: relative;
 }
 
-.introduction li::before {
+.introduction .education li::before {
   content: '';
   width: 22px;
   height: 22px;

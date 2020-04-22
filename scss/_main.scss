@@ -1,5 +1,6 @@
 $mainColor: #fff;
-$2ndColor: #000;
+$minorColor: #000;
+
 @font-face{
   font-family: custom-sans-serif;
   src: local("Heiti TC"), local("微軟正黑體"), local("Microsoft JhengHei");
@@ -16,7 +17,7 @@ body{
     font-weight: bold;
   }
   img{
-    display: inline-block;
+    display: block;
   }
 }
 .container{
@@ -26,22 +27,27 @@ body{
 header{
   margin: 0 auto;
   background: url(../img/headerbg.png) no-repeat;
+  background-position: center center;
   text-align: center;
   display: flex;
   justify-content: center;
   margin-bottom: 64px;
   .title{
-    margin-top: 353px;
+    margin-top: 356px;
     color: $mainColor;
     font-weight: bold;
     text-align: left;
-    span{
-      font-size: 80px;
-      line-height: 106px;
-    }
     p{
-      padding-bottom: 63px;
-      line-height: 36px;
+      line-height: 28px;
+    }
+    h1{
+      font-size: 80px;
+      line-height: 94px;
+      padding-bottom: 32px;
+    }
+    .titleMain{
+      padding-bottom: 48px;
+      line-height: 42px;
     }
     ul{
       display: flex;
@@ -63,9 +69,9 @@ header{
     display: inline-block;
     padding-bottom: 24px;
   }
-  section{
+  ul{
     padding-bottom: 32px;
-    p{
+    li{
       padding-bottom: 8px;
     }
   }
@@ -75,7 +81,7 @@ header{
     width: 384px;
     border-top: solid #000 1.5px;
   }
-  li{
+  .education li{
     padding-bottom: 32px;
     position: relative;
     &::before{
@@ -91,7 +97,7 @@ header{
   }
 }
 .brand{
-  background: $2ndColor;
+  background: $minorColor;
   color: $mainColor;
   text-align: center;
   h2{
@@ -144,7 +150,7 @@ header{
   }
 }
 footer{
-  background: $2ndColor;
+  background: $minorColor;
   color: $mainColor;
   text-align: center;
   padding-bottom: 80px;
