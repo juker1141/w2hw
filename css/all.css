@@ -102,7 +102,7 @@ header .title {
   text-align: left;
 }
 
-header .title p {
+header .title .minTitle {
   line-height: 28px;
 }
 
@@ -112,7 +112,7 @@ header .title h1 {
   padding-bottom: 32px;
 }
 
-header .title .titleMain {
+header .title p {
   padding-bottom: 48px;
   line-height: 42px;
 }
@@ -268,5 +268,10 @@ footer h2 {
 
 footer p {
   line-height: 36px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #fff;
 }
 /*# sourceMappingURL=all.css.map */

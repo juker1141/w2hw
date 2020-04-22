@@ -37,7 +37,7 @@ header{
     color: $mainColor;
     font-weight: bold;
     text-align: left;
-    p{
+    .minTitle{
       line-height: 28px;
     }
     h1{
@@ -45,7 +45,7 @@ header{
       line-height: 94px;
       padding-bottom: 32px;
     }
-    .titleMain{
+    p{
       padding-bottom: 48px;
       line-height: 42px;
     }
@@ -53,6 +53,7 @@ header{
       display: flex;
       justify-content: space-around;
       padding-bottom: 256px;
+
     }
   }
 }
@@ -162,5 +163,9 @@ footer{
   }
   p{
     line-height: 36px;
+    a{
+      text-decoration: none;
+      color: $mainColor;
+    }
   }
 }
